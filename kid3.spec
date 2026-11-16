@@ -2,9 +2,9 @@
 
 Summary:	ID3 Tagger
 Name:		kid3
-Version:		3.10.1
-Release:		3
-License:		GPLv2+
+Version:		3.10.2
+Release:		1
+License:		GPL-2.0-or-later
 Group:	Sound
 Url:		https://kid3.kde.org
 Source0:	https://prdownloads.sourceforge.net/kid3/%{name}-%{version}.tar.gz
@@ -141,7 +141,6 @@ sed -i 's/51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA/31 Milk Str
 %build
 %cmake	-DBUILD_SHARED_LIBS:BOOL=OFF \
 		-DWITH_TAGLIB=ON \
-		-DWITH_ID3LIB=ON \
 		-DWITH_VORBIS=ON \
 		-DWITH_FLAC=ON \
 		-DWITH_CHROMAPRINT=ON \
